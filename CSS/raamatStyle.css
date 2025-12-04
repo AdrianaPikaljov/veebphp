@@ -1,0 +1,22 @@
+h1 {
+    color: #2c3e50;
+}
+
+h2 {
+    color: #34495e;
+}
+
+input {
+    padding: 6px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
