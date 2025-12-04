@@ -1,0 +1,111 @@
+header {
+    background-color: #add8e6; /* light blue */
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer {
+    background-color: #add8e6;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.uuscontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #add8e6; /* light blue */
+    border: 1px solid #87cefa; /* slightly darker light blue */
+    margin: 20px;
+}
+
+.uuscontainer > div {
+    padding: 20px;
+    width: 300px;
+    min-height: 100px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px){
+    div.container{
+        flex-direction: column;
+    }
+}
+
+div.container > div{
+    margin: 10px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px #87cefa; /* light blue border */
+}
+
+.menu, .menu ul{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu{
+    display: block;
+    position: relative;
+    height: 47px;
+    width: 100%;
+    background: #e0f7ff; /* very light blue */
+    top: 10px;
+}
+
+.menu ul>li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.dropdown{
+    display: none;
+}
+
+.menu li>a{
+    display: block;
+    color: #000;
+    padding: 16px;
+    width: 130px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+}
+
+.menu li:hover>a{
+    background: #87cefa; /* light blue hover */
+    color: #fff;
+}
+
+.dropdown{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    background: #b0e0e6; /* powder blue */
+    transition: all 0.3s ease;
+}
+
+.menu li:hover>ul{
+    top: 47px;
+    left: 0;
+    opacity: 1;
+}
